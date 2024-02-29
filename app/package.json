@@ -1,0 +1,39 @@
+{
+    "name": "arlene-services-optimize-glb",
+    "version": "1.0.0",
+    "description": "Microservice for optimizing GLB files.",
+    "main": "server.js",
+    "scripts": {
+        "start": "npm run clear && node server",
+        "dev": "npm run clear && nodemon server -i \"uploads/**\" -i \"tempProjects/**\"",
+        "clear": "rm -rf uploads && mkdir uploads && rm -rf tempProjects && mkdir tempProjects",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "J. Quiceno <jquiceno2219@cue.edu.co>",
+    "private": true,
+    "license": "NOLICENSE",
+    "dependencies": {
+        "@fastify/cors": "^8.0.0",
+        "@fastify/error": "^3.0.0",
+        "@fastify/multipart": "^7.1.0",
+        "@fastify/swagger": "^7.4.0",
+        "@gltf-transform/cli": "^3.4.0",
+        "@gltf-transform/extensions": "^3.4.0",
+        "@gltf-transform/functions": "^3.4.0",
+        "@huggingface/inference": "^2.6.1",
+        "adm-zip": "^0.5.9",
+        "axios": "^1.4.0",
+        "fastify": "^4.26.1",
+        "fastify-swagger": "^5.2.0",
+        "firebase-admin": "^11.9.0",
+        "form-data": "^4.0.0",
+        "fs-extra": "^10.1.0",
+        "mime-types": "^2.1.35",
+        "node-cron": "^3.0.2",
+        "sharp": "^0.32.5",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
+}
